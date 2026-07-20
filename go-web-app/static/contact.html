@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistro Elegance - Contact</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Georgia', serif; background-color: #faf7f2; color: #332d27; line-height: 1.6; }
+        header { background-color: #ffffff; padding: 20px; text-align: center; border-bottom: 1px solid #e6dfd5; }
+        h1 { font-weight: 300; font-size: 2.2rem; color: #5c4033; letter-spacing: 2px; }
+        nav { margin-top: 15px; }
+        nav a { text-decoration: none; color: #8b7355; margin: 0 15px; font-size: 0.95rem; font-weight: bold; letter-spacing: 1px; transition: color 0.3s; }
+        nav a:hover, nav a.active { color: #5c4033; border-bottom: 1px solid #5c4033; }
+        .container { max-width: 800px; margin: 50px auto; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 40px; }
+        .info-panel { flex: 1; min-width: 280px; }
+        .info-panel h2 { font-size: 1.8rem; color: #5c4033; margin-bottom: 20px; font-weight: normal; }
+        .info-panel p { margin-bottom: 15px; color: #4e443c; }
+        .info-panel strong { color: #5c4033; }
+        .form-panel { flex: 1; min-width: 280px; background: #ffffff; padding: 30px; border: 1px solid #e6dfd5; border-radius: 4px; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 5px; font-size: 0.9rem; color: #5c4033; }
+        .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #e6dfd5; border-radius: 2px; font-family: inherit; font-size: 0.95rem; color: #332d27; }
+        .form-group input:focus, .form-group textarea:focus { outline: 1px solid #8b7355; }
+        .submit-btn { background-color: #5c4033; color: white; border: none; padding: 12px 20px; width: 100%; cursor: pointer; font-family: inherit; letter-spacing: 1px; transition: background-color 0.3s; }
+        .submit-btn:hover { background-color: #402c22; }
+        footer { text-align: center; padding: 30px; font-size: 0.85rem; color: #8b7355; border-top: 1px solid #e6dfd5; margin-top: 60px; background: #ffffff; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BISTRO ELEGANCE</h1>
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html" class="active">CONTACT</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="info-panel">
+            <h2>Visit Us</h2>
+            <p>We await your arrival. Walk-ins are welcome, but reservations are recommended for weekend evenings.</p>
+            <p><strong>Address:</strong> 123 Culinary Lane, Food District</p>
+            <p><strong>Phone:</strong> +1 (555) 234-5678</p>
+            <p><strong>Hours:</strong> Tue - Sun: 11:00 AM - 10:00 PM</p>
+        </section>
+
+        <section class="form-panel">
+            <form action="#" method="POST" onsubmit="alert('Thank you for reaching out!'); return false;">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Reservation Note or Inquiry</label>
+                    <textarea id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bistro Elegance. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
