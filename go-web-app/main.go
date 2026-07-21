@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func homePage(w http.ResponseWriter, r *http.Request) {
+func homeHandler(w http.ResponseWriter, r *http.Request) {
 	// Restrict root path so it doesn't accidentally catch broken links
 	if r.URL.Path != "/" {
 		http.NotFound(w, r)
@@ -41,7 +41,7 @@ func submitContactHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	// Route mappings matching your static folder layouts
-	http.HandleFunc("/", homePage) // Changed from "/home" to "/" for default loading
+	http.HandleFunc("/", homeHandler) // Changed from "/home" to "/" for default loading
 	http.HandleFunc("/about", aboutPage)
 	http.HandleFunc("/contact", contactPage)
 	http.HandleFunc("/submit-contact", submitContactHandler) // Added to process the form
