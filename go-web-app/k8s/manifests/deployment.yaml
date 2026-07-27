@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: web-go-app
-        image: rutwik217/web-go-app:v1
+        image: rutwik217/go-web-app:v1
         ports:
         - containerPort: 8080

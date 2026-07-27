@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: web-go-app
-        image: rutwik217/web-go-app:{{ .Values.image.tag }}
+        image: rutwik217/go-web-app:{{ .Values.image.tag }}
         ports:
         - containerPort: 8080
