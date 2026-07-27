@@ -2,6 +2,9 @@
 
 name: CI/CD
 #exlude f
+env:
+  # This suppresses the warning and allows Node 20 execution
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: 'true'
 on:
   push:
     branches:
