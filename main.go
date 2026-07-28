@@ -36,7 +36,7 @@ func submitContactHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("Message From: %s (%s)\nNote: %s\n---\n", name, email, message)
 
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
-	fmt.Fprint(w, "<h3>Thank you! Message received.</h3><a href='/'>Return Home</a>")
+	_, _ = fmt.Fprint(w, "<h3>Thank you! Message received.</h3><a href='/'>Return Home</a>")
 }
 
 func main() {
