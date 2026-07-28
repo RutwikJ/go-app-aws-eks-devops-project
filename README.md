@@ -14,7 +14,8 @@ This project is a small web application built in Go and packaged to demonstrate 
 
 ## Architecture
 
-```flowchart LR
+```mermaid
+flowchart LR
 A[Developer] --> B[GitHub Repository]
 B --> C[GitHub Actions]
 C --> D[Docker Image]
